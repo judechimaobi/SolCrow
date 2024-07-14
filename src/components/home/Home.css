@@ -1,0 +1,278 @@
+body {
+	background: linear-gradient(135deg, #300784, #1c0943);
+	background-color: #4f0cd3;
+	color: #e0e0e0;
+	font-family: 'Arial', sans-serif;
+}
+
+.home-container {
+	text-align: center; 
+	padding: 50px;
+	height: 100vh;
+	/* background: linear-gradient(135deg, #300784, #1c0943); */
+	color: #ffffff;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-inner-container {
+	display: flex;
+	text-align: left; 
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+
+.home-top-banner {
+	padding: 20px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: 
+	linear-gradient(rgba(135, 49, 255, 0.6), rgba(79, 12, 211, 0.8)),
+		url('../../../public/bg1.jpeg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	box-shadow: 0px 0px 100px 0px #0a0711;
+	backdrop-filter: blur(5px);
+}
+
+.home-top-banner h1 span {
+	background-color: rgba(15, 7, 29, 0.5);
+	/* backdrop-filter: blur(5px); */
+	padding: 10px 20px;
+	/* border: 2px solid #8731ff; */
+	border-radius: 10px;
+	color: #ceab10;
+}
+
+.home-side-box {
+	padding: 20px;
+	background: linear-gradient(178deg, #8731ff, #4f0cd3);
+	border-radius: 20px;
+	margin-right: 10px;
+}
+.home-side-box h1 {
+	margin-top: -20px;
+}
+
+.home-side-box-text {
+	color: #ceab10;
+}
+.home-side-box-coin {
+	width: 250px;
+	animation: fadeIn 2.5s ease-in-out;
+	/* z-index: 999; */
+	/* box-shadow: 0px 0px 100px 0px #e0b1ff; */
+}
+
+.home-box {
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+	margin: 10px;
+	padding: 20px;
+	border: 2px solid #8731ff;
+	border-radius: 20px;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-box-desc {
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.home-box h3 {
+	font-size: 2em;
+}
+
+.home-box-content {
+	width: 60%;
+}
+
+.home-icon {
+	width: 40%;
+	animation: fadeIn 2.5s ease-in-out;
+}
+
+.home-container h1 {
+	font-size: 3.5em;
+	margin-bottom: 20px;
+	animation: slideInFromTop 2s ease-in-out;
+}
+
+.home-container p {
+	margin-bottom: 40px;
+	animation: slideInFromBottom 1.5s ease-in-out;
+}
+
+.home-button-container {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.home-btn {
+	padding: 15px 30px;
+	background-color: #ceab10;
+	border: none;
+	border-radius: 30px;
+	color: #3d331e;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.5s ease;
+	animation: slideInFromBottom 1.5s ease-in-out;
+}
+
+.home-btn:hover {
+	background-color: #ffd102;
+	transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInFromTop {
+	from {
+		transform: translateY(-50%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInFromBottom {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slowBounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
+
+.bounce {
+	animation: slowBounce 2s infinite;
+}
+
+@media (max-width: 1024px) {
+	body {
+		overflow: auto;
+	}
+	.home-inner-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.home-box {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.home-box-content {
+		width: 60%;
+	}
+	
+	.home-icon {
+		width: 40%;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		overflow: auto;
+	}
+	.home-box {
+		width: 100%;
+	}
+	.home-box-content {
+		width: 60%;
+	}
+	.home-icon {
+		width: 40%;
+	}
+}
+
+@media (max-width: 600px) {
+	.home-inner-container {
+		padding-top: 10px;
+	}
+	.home-box {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.home-box-content {
+		width: 60%;
+	}
+	.home-icon {
+		width: 40%;
+	}
+}
+
+@media (max-width: 400px) {
+	.home-home-container {
+		padding: 20px;
+	}
+
+	.home-box-desc {
+		font-size: 12px;
+		line-height: 25px;
+	}
+
+	.home-btn {
+		font-size: 0.9em;
+	}
+}
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: #1c0943; /* Background of the scrollbar track */
+	border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #8731ff; /* Color of the scrollbar thumb */
+	border-radius: 20px;
+	border: 3px solid #1c0943; /* Space between thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4f0cd3; /* Hover color of the scrollbar thumb */
+}
+
+/* Firefox */
+body {
+	scrollbar-width: thin; /* Width of the scrollbar */
+	scrollbar-color: #8731ff #1c0943; /* Thumb color and track color */
+}
+
+/* Apply same styles to other scrollable elements */
+.inner-container {
+	scrollbar-width: thin; /* Width of the scrollbar */
+	scrollbar-color: #8731ff #1c0943; /* Thumb color and track color */
+}
+
+/* Internet Explorer 10+ */
+body {
+	-ms-overflow-style: none; /* Disable default scrollbar style */
+}

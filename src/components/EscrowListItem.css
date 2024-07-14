@@ -1,0 +1,82 @@
+.escrow-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: linear-gradient(rgba(135, 49, 255, 0.5), rgba(79, 12, 211, 0.8));
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .escrow-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .escrow-detail {
+    margin-bottom: 10px;
+    text-align: left;
+    /* line-height: 10px; */
+    margin: 0;
+  }
+  
+  .escrow-actions {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #3d331e;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .view-button {
+    width: 100%;
+    /* margin-top: 20px; */
+    padding: 15px 30px;
+    background-color: #ceab10;
+    border: none;
+    border-radius: 30px;
+    color: #3d331e;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
+  
+  .view-button:hover {
+    background-color: #ffd102;
+	transform: scale(1.02);
+  }
+  
+  .cancel-button {
+    /* background-color: #dc3545; */
+    width: 100%;
+    /* margin-top: 20px; */
+    padding: 15px 30px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 30px;
+    color: #ffd5d5;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
+  
+  .cancel-button:hover {
+    background-color: #b61121;
+	  transform: scale(1.02);
+  }
+  

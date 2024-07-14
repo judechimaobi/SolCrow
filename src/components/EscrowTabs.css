@@ -1,0 +1,28 @@
+/* EscrowTabs.css */
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    /* background: linear-gradient(rgba(135, 49, 255, 1), rgba(79, 12, 211, 1)); */
+    background: unset;
+    border: 1px solid rgba(135, 49, 255, 1);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover,
+  .tab.active {
+    /* background: linear-gradient(rgba(135, 49, 255, 0.5), rgb(30, 4, 83) ); */
+    background: linear-gradient(rgba(135, 49, 255, 1), rgba(79, 12, 211, 1));
+}
+  

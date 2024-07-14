@@ -1,0 +1,251 @@
+body {
+	background: linear-gradient(135deg, #300784, #1c0943);
+	background-color: #4f0cd3;
+	color: #e0e0e0;
+	font-family: 'Arial', sans-serif;
+	overflow: auto;
+	scrollbar-width: thin; /* Width of the scrollbar */
+	scrollbar-color: #8731ff #1c0943; /* Thumb color and track color */
+}
+
+.create-escrow-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	text-align: center;
+	padding: 50px;
+	min-height: 100vh;
+	color: #ffffff;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+.create-escrow-container h1 {
+	font-size: 3.5em;
+	margin-bottom: 20px;
+	color: #ffffff;
+	animation: slideInFromTop 2s ease-in-out;
+}
+
+.create-escrow-container p {
+	margin-bottom: 40px;
+	animation: slideInFromBottom 1.5s ease-in-out;
+}
+
+.create-inner-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	padding: 40px;
+	border-radius: 50px;
+	border: 1px solid #4f0cd3;
+}
+
+.create-top-banner {
+	padding: 20px;
+	background: 
+	linear-gradient(rgba(135, 49, 255, 0.5), rgba(79, 12, 211, 0.8)),
+	url('../../../public/solana-bg.jpeg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+}
+
+.create-escrow-container form {
+	padding: 40px 20px;
+	background-color: #300784;
+	border-radius: 20px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	text-align: center;
+	color: #ffffff;
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+
+
+.create-flex-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+
+.create-form-div {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.create-escrow-container input {
+	width: 100%;
+	padding: 20px;
+	margin-top: 5px;
+	border-radius: 10px;
+	background-color: #3700b3;
+	color: #ffffff;
+	border: none;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0 1px #6200ea; 
+}
+
+.create-escrow-container input:focus {
+	outline: none;
+	box-shadow: inset 0 0 0 2px #ceab10;
+}
+
+
+
+.create-btn {
+	width: 100%;
+	margin-top: 20px;
+	padding: 15px 30px;
+	background-color: #ceab10;
+	border: none;
+	border-radius: 30px;
+	color: #3d331e;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.5s ease;
+	animation: slideInFromBottom 1.5s ease-in-out;
+}
+
+.create-btn:hover {
+	background-color: #ffd102;
+	transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+	from {
+			opacity: 0;
+	}
+	to {
+			opacity: 1;
+	}
+}
+
+@keyframes slideInFromTop {
+	from {
+			transform: translateY(-50%);
+			opacity: 0;
+	}
+	to {
+			transform: translateY(0);
+			opacity: 1;
+	}
+}
+
+@keyframes slideInFromBottom {
+	from {
+			transform: translateY(100%);
+			opacity: 0;
+	}
+	to {
+			transform: translateY(0);
+			opacity: 1;
+	}
+}
+
+@keyframes slowBounce {
+	0%, 100% {
+			transform: translateY(0);
+	}
+	50% {
+			transform: translateY(-20px);
+	}
+}
+
+.bounce {
+	animation: slowBounce 2s infinite;
+}
+
+@media (max-width: 1024px) {
+	.create-inner-container {
+			width: 90%;
+			padding: 30px;
+	}
+	.create-escrow-container h1 {
+			font-size: 3em;
+	}
+	.create-form-div {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.create-inner-container {
+			width: 95%;
+			padding: 20px;
+	}
+	.create-escrow-container h1 {
+			font-size: 2.5em;
+	}
+	.create-form-div {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	.create-escrow-container {
+			padding: 20px;
+	}
+	.create-inner-container {
+			padding: 15px;
+	}
+	.create-escrow-container h1 {
+			font-size: 2em;
+	}
+	.create-form-div {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	.create-escrow-container {
+			padding: 20px;
+	}
+	.create-inner-container {
+			padding: 10px;
+	}
+	.create-escrow-container h1 {
+			font-size: 1.5em;
+	}
+	.create-btn {
+			font-size: 0.9em;
+	}
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: #1c0943; /* Background of the scrollbar track */
+	border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #8731ff; /* Color of the scrollbar thumb */
+	border-radius: 20px;
+	border: 3px solid #1c0943; /* Space between thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4f0cd3; /* Hover color of the scrollbar thumb */
+}
